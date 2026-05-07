@@ -4,136 +4,338 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NIGHT DRIVE</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: radial-gradient(circle at top, #2b0f0f, #050505 70%);
+      color: #e8e0d0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 90px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(15,0,0,0.9)),
+        url("images/lava-scene.png");
+      background-size: cover;
+      background-position: center;
+      border-bottom: 2px solid #7a1f0e;
+    }
+
+    header h1 {
+      font-size: 64px;
+      color: #ff6b35;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 15px #ff2200;
+    }
+
+    header p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
+      color: #d8c7b0;
+    }
+
+    .tabs {
+      text-align: center;
+      padding: 20px;
+      background-color: #0d0505;
+      border-bottom: 1px solid #4a1a10;
+    }
+
+    .tabs button {
+      background-color: #1a0d0d;
+      color: #ffb347;
+      border: 1px solid #7a1f0e;
+      padding: 12px 20px;
+      margin: 8px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .tabs button:hover {
+      background-color: #7a1f0e;
+      color: white;
+      box-shadow: 0 0 15px rgba(255, 80, 0, 0.5);
+    }
+
+    .tab-section {
+      display: none;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 35px;
+      background-color: rgba(15, 8, 6, 0.92);
+      border: 1px solid #4a1a10;
+      border-radius: 14px;
+      box-shadow: 0 0 25px rgba(255, 60, 0, 0.12);
+    }
+
+    .active {
+      display: block;
+    }
+
+    h2 {
+      color: #ff7842;
+      font-size: 36px;
+      text-shadow: 0 0 10px rgba(255, 90, 20, 0.5);
+    }
+
+    h3 {
+      color: #ffb347;
+      margin-top: 30px;
+    }
+
+    p {
+      color: #ddd0bd;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(255, 60, 0, 0.25);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 30%;
+      min-width: 250px;
+      border-radius: 10px;
+      border: 2px solid #5c1a0d;
+      filter: brightness(70%) contrast(120%);
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      filter: brightness(95%);
+      box-shadow: 0 0 20px rgba(255, 80, 0, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #050505;
+      color: #9c8f80;
+      margin-top: 40px;
+      border-top: 1px solid #4a1a10;
+    }
+
+  </style>
 </head>
+
 <body>
 
   <header>
     <h1>NIGHT DRIVE</h1>
-    <p>A story-driven adventure inspired by Hawaiian mythology, fire, land, and survival.</p>
+    <p>
+      A dark Hawaiian supernatural horror game inspired by Pele,
+      Menehune, Night Marchers, and the isolated roads of Oʻahu.
+    </p>
   </header>
 
-  <section class="pitch">
+  <nav class="tabs">
+    <button onclick="showSection('pitch')">Pitch</button>
+    <button onclick="showSection('story')">Story</button>
+    <button onclick="showSection('trailer')">Trailer</button>
+    <button onclick="showSection('design')">Design</button>
+    <button onclick="showSection('future')">Future</button>
+  </nav>
+
+  <!-- PITCH -->
+
+  <section id="pitch" class="tab-section active">
+
+    <h2>Game Pitch</h2>
+
+    <p>
+      NIGHT DRIVE is a supernatural horror adventure game set on the dark roads
+      of Oʻahu. The player unknowingly encounters Pele during a late-night drive,
+      leading them into a dangerous journey through isolated locations haunted
+      by Hawaiian spirits and legends.
+    </p>
+
+    <p>
+      The game combines exploration, survival, suspense, and mini-game combat
+      encounters while creating an eerie atmosphere inspired by local ghost stories
+      and Hawaiian mythology.
+    </p>
+
+  </section>
+
+  <!-- STORY -->
+
+  <section id="story" class="tab-section">
+
     <h2>Story & Gameplay</h2>
 
-  <h3>Introduction</h3>
-  <p>
-    The game begins with the player driving home late at night on Oʻahu. 
-    The sky fades from orange into darkness as the road grows quieter. 
-    The radio hums softly while headlights cut through the empty highway.
-  </p>
+    <h3>Introduction</h3>
 
-  <p>
-    As the player continues driving, something begins to feel off. 
-    The GPS signal fades. Road signs stop making sense. Without realizing it, 
-    the player ends up on the dark, winding road of Makapuʻu near Waimānalo.
-  </p>
-
-  <p>
-    Rounding a bend, a woman dressed in white suddenly appears in the headlights. 
-    The player is forced to stop.
-  </p>
-
-  <p>
-    She stands silently. Watching. Then slowly walks toward the passenger side.
-  </p>
-
-  <p><strong>The player must choose:</strong></p>
-  <ul>
-    <li>Let her into the car</li>
-    <li>Drive away</li>
-  </ul>
-
-  <p>
-    If the player lets her in, she enters without a word and sits in silence.
-  </p>
-
-  <h3>First Encounter: Menehune</h3>
-  <p>
-    Not long after, the car breaks down on a dark stretch of road in Waimānalo. 
-    The engine dies. Smoke rises from the hood.
-  </p>
-
-  <p>
-    The woman reveals herself as Pele and explains that small forest spirits 
-    are nearby and do not want her passing through.
-  </p>
-
-  <p>
-    The player must search for a missing engine part while defending against 
-    Menehune emerging from the forest. These spirits attempt to steal the part 
-    and delay the journey.
-  </p>
-
-  <p>
-    Once the player recovers the part and fends them off, the car is repaired 
-    and the journey continues.
-  </p>
-
-  <h3>Second Encounter: Night Marchers</h3>
-  <p>
-    The car breaks down again in a more isolated location. 
-    This time, the player must protect Pele while searching for parts, 
-    as Night Marchers appear in the distance.
-  </p>
-
-  <p>
-    The player must avoid direct confrontation, move carefully, and survive 
-    while completing the objective.
-  </p>
-
-  <h3>Final Encounter</h3>
-  <p>
-    In the final breakdown, the Menehune return, but this time they combine 
-    into a single, massive figure.
-  </p>
-
-  <p>
-    The player must defend Pele one last time while recovering the final part, 
-    facing the strongest version of the threat.
-  </p>
-
-  <p>
-    This final encounter tests everything the player has learned throughout the game.
-  </p>
-</section>
-
-  <section class="design">
-    <h2>Game Design and Illustrations</h2>
     <p>
-      The visual design uses warm colors, lava-inspired backgrounds, island landscapes,
-      and natural elements to match the theme of the game.
+      The game begins with the player driving home late at night after sunset on Oʻahu.
+      The road is quiet and the sky slowly fades from orange to dark.
+    </p>
+
+    <p>
+      At first everything seems normal. The radio plays softly and the headlights
+      cut through the empty road. As the player drives farther, the surroundings
+      begin to feel unfamiliar.
+    </p>
+
+    <p>
+      The GPS signal fades. Road signs stop making sense. Without realizing it,
+      the player ends up on the dark road of Makapuʻu near Waimānalo.
+    </p>
+
+    <p>
+      A woman dressed in white suddenly appears in the headlights.
+    </p>
+
+    <p>
+      The player must choose whether to let her into the vehicle or drive away.
+    </p>
+
+    <h3>First Mini Game</h3>
+
+    <p>
+      The car suddenly breaks down in Waimānalo. Pele explains that Menehune
+      nearby do not want her traveling through the area.
+    </p>
+
+    <p>
+      The player must search for a missing engine part while defending against
+      Menehune emerging from the forest shadows.
+    </p>
+
+    <h3>Second Mini Game</h3>
+
+    <p>
+      The car breaks down again at another isolated location.
+      This time the player must survive encounters with Night Marchers
+      while searching for repair parts.
+    </p>
+
+    <h3>Final Encounter</h3>
+
+    <p>
+      During the final breakdown, the Menehune return and merge together
+      into a giant creature.
+    </p>
+
+    <p>
+      The player must defend Pele and survive the final encounter
+      before escaping the island road.
+    </p>
+
+  </section>
+
+  <!-- TRAILER -->
+
+  <section id="trailer" class="tab-section">
+
+    <h2>Trailer</h2>
+
+    <p>
+      This trailer showcases gameplay, driving scenes,
+      suspense moments, and supernatural encounters.
+    </p>
+
+    <iframe
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+      title="Night Drive Trailer"
+      allowfullscreen>
+    </iframe>
+
+  </section>
+
+  <!-- DESIGN -->
+
+  <section id="design" class="tab-section">
+
+    <h2>Design & Illustrations</h2>
+
+    <p>
+      The game uses dark environments, volcanic lighting,
+      fog, forests, abandoned roads, and eerie audio design
+      to create tension and suspense.
     </p>
 
     <div class="gallery">
-      <img src="images/pele_window.png" alt="Game screenshot 1">
-      <img src="images/game-image2.png" alt="Game screenshot 2">
-      <img src="images/game-image3.png" alt="Game artwork">
+
+      <img src="pele_window.png" alt="Game image 1">
+
+      <img src="images/game2.png" alt="Game image 2">
+
+      <img src="images/game3.png" alt="Game image 3">
+
     </div>
+
   </section>
 
-  <section class="development">
+  <!-- FUTURE -->
+
+  <section id="future" class="tab-section">
+
     <h2>Future Development</h2>
+
     <p>
-      Future versions of the game would expand beyond repeated breakdown scenarios 
-      by introducing new mechanics such as driving sequences, dialogue choices that 
-      affect outcomes, and multiple endings based on player decisions.
+      Future versions of the game would expand beyond repeated
+      car breakdown scenarios by introducing:
     </p>
 
     <ul>
-      <li>Add more playable levels</li>
-      <li>Create more enemies and obstacles</li>
-      <li>Add voice narration or dialogue</li>
-      <li>Improve character movement and animation</li>
-      <li>Add a final boss or major story challenge</li>
-      <li>Include more cultural background and learning moments</li>
+      <li>Multiple endings based on player decisions</li>
+      <li>Expanded driving mechanics</li>
+      <li>Dialogue choices</li>
+      <li>More explorable locations across Oʻahu</li>
+      <li>Additional Hawaiian supernatural encounters</li>
+      <li>Improved animations and sound design</li>
+      <li>Voice acting and cinematic cutscenes</li>
     </ul>
+
   </section>
 
   <footer>
-    <p>Created by: Alexander Cornwell, Jaimee Yokoyama, Maya Buchanan  / Unnamed</p>
-    <p>Game Website Final Project 2026</p>
+    <p>Created by Alex Cornwell, Jaimee Yokoyama, and Maya Buchanan</p>
   </footer>
+
+  <script>
+
+    function showSection(sectionId) {
+
+      const sections = document.querySelectorAll('.tab-section');
+
+      sections.forEach(function(section) {
+        section.classList.remove('active');
+      });
+
+      document.getElementById(sectionId).classList.add('active');
+
+    }
+
+  </script>
 
 </body>
 </html>
