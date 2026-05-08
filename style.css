@@ -113,7 +113,8 @@ img {
 /* specific image sizing */
 
 .story-image {
-  width: 50px;
+  width: 400px;
+  max-width: 90%;
   display: block;
   margin: 30px auto;
   border-radius: 10px;
