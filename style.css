@@ -14,12 +14,12 @@ header {
     url("images/lava-scene.png");
   background-size: cover;
   background-position: center;
-  border-bottom: 2px solid #7a1f0e;
+  border-bottom: 2px solid #923b1b;
 }
 
 header h1 {
   font-size: 64px;
-  color: #ff6b35;
+  color: #b7622c;
   letter-spacing: 4px;
   margin-bottom: 10px;
   text-shadow: 0 0 15px #ff2200;
@@ -84,6 +84,7 @@ h3 {
 }
 
 p {
+  font-size: 25px;
   color: #ddd0bd;
 }
 
