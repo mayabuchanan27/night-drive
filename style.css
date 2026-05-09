@@ -8,7 +8,7 @@ body {
 
 header {
   text-align: center;
-  padding: 90px 20px;
+  padding: 70px 20px;
   background:
     linear-gradient(rgba(0,0,0,0.7), rgba(15,0,0,0.9)),
     url("images/lava-scene.png");
@@ -33,6 +33,7 @@ header p {
 }
 
 .tabs {
+  font-family: Georgia, serif;
   text-align: center;
   padding: 20px;
   background-color: #0d0505;
@@ -79,6 +80,7 @@ h2 {
 }
 
 h3 {
+  font-size: 28px;
   color: #ffb347;
   margin-top: 30px;
 }
