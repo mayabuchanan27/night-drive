@@ -41,6 +41,7 @@ header p {
 }
 
 .tabs button {
+  font-family: Georgia, serif;
   background-color: #1a0d0d;
   color: #ffb347;
   border: 1px solid #7a1f0e;
