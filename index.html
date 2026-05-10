@@ -28,14 +28,13 @@
   </nav>
 
   <!-- PITCH -->
-
   <section id="pitch" class="tab-section active">
 
     <h2>Game Pitch</h2>
     
     <div style="text-align: center;">
-      <img src="images/titlescreen.png" alt="Game image 1" style="width: 100%; max-width: 5000px;">
-    </div></div>
+      <img src="images/titlescreen.png" alt="Game image 1" class="story-image">
+    </div>
    
     <p>
       NIGHT DRIVE is a supernatural 2D top-down horror adventure game set on the dark roads
@@ -53,7 +52,6 @@
   </section>
 
   <!-- STORY -->
-
   <section id="story" class="tab-section">
 
     <h2>Story & Gameplay</h2>
@@ -66,7 +64,6 @@
     </p>
   
     <img src="images/beach.png" class="story-image" alt="road">
-
 
     <p>
       At first everything seems normal until the player encounters a woman standing along on the side of the road.
@@ -117,8 +114,8 @@
       musubi, and useful tools that can help during encounters.
     </p>
   
-    <img src="images/menehune.png" class="story-image" alt="Gameplay scene">
-    <img src="images/foodtruck.png" class="story-image" alt="Gameplay scene">
+    <img src="images/menehune.png" class="story-image" alt="Menehune">
+    <img src="images/foodtruck.png" class="story-image" alt="Food truck">
   
     <p>
       When encountering Menehune, the player is given multiple choices:
@@ -132,7 +129,7 @@
       <li>Run away</li>
     </ul>
   
-    <img src="images/menehunescene.png" class="story-image" alt="Gameplay scene">
+    <img src="images/menehunescene.png" class="story-image" alt="Menehune scene">
 
     <p>
       Different choices lead to different outcomes. If the wrong action is chosen,
@@ -156,7 +153,7 @@
       the journey deeper into the night.
     </p>
 
-    <img src="images/tobecontinued.png" class="story-image" alt="Gameplay scene">
+    <img src="images/tobecontinued.png" class="story-image" alt="To be continued">
   
   </section>
 
@@ -177,22 +174,22 @@
     
     </div>
 
+  </section>
+
   <!-- DESIGN -->
   <section id="design" class="tab-section">
 
     <h2>Design & Art</h2>
 
-    <div class="gallery img">
-      <img src="images/gameplay.png" class="story-image" alt="Gameplay scene">
-      <img src="images/menehune.png" class="story-image" alt="Gameplay scene">
-      <img src="images/foodtruck.png" class="story-image" alt="Gameplay scene">
+    <div class="gallery">
+      <img src="images/gameplay.png" alt="Gameplay scene">
+      <img src="images/menehune.png" alt="Menehune">
+      <img src="images/foodtruck.png" alt="Food truck">
     </div>
 
   </section>
 
-
   <!-- FUTURE -->
-
   <section id="future" class="tab-section">
 
     <h2>Future Development</h2>
@@ -217,9 +214,7 @@
   </footer>
 
   <script>
-
     function showSection(sectionId) {
-
       const sections = document.querySelectorAll('.tab-section');
 
       sections.forEach(function(section) {
@@ -227,9 +222,7 @@
       });
 
       document.getElementById(sectionId).classList.add('active');
-
     }
-
   </script>
 
 </body>
